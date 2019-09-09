@@ -1,0 +1,7 @@
+<h2>{{title}}</h2>
+<div>
+  <button (click) = "visibilityParagraf()">Show details</button>
+  <p [ngClass]="{hidden: visibile}">{{ditail}}</p>
+  <p *ngFor="let item of array" [ngClass]="{changeColor: item.counterClick > 4}"
+    [ngStyle]="{ backgroundColor: (item.counterClick > 4 ? 'blue' : 'none')}"> {{item.counterClick}} click: {{item.time}}</p>
+</div> 
