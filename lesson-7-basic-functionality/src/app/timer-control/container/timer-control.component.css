@@ -1,0 +1,21 @@
+.wrap-timer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em auto; 
+  width: 30em;
+
+}
+
+.timer-btn {
+  padding: 0.5em 2em;
+  background: green;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-align: center;
+  border: none;
+}
+
+.timer-btn__stop {
+  background: red;
+}
