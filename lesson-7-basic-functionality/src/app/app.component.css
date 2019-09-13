@@ -1,0 +1,9 @@
+p {
+  font-size: 1rem;
+  font-family: Lato;
+}
+
+[arrCount]{
+  display: flex;
+  justify-content: space-around;
+}
