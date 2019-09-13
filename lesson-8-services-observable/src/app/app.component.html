@@ -1,0 +1,15 @@
+<h2>Inactive Users</h2>
+<app-inactive-users
+  *ngFor="let user of users;"
+  [item]='user'
+  (changeState)='changeToActive($event)'
+>
+</app-inactive-users>
+
+<h2>Active Users</h2>
+<app-active-users
+  *ngFor="let user of users;"
+  [item]='user'
+  (changeState)='changeToInactive($event)'
+>
+</app-active-users>
