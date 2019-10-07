@@ -1,0 +1,39 @@
+<form [formGroup] = "parent" (ngSubmit) = "onSubmit()">
+  <div formGroupName = "projectStorage">
+    <input 
+      type="text"
+      placeholder="Project Name"
+      formControlName = "projectName">
+    <div 
+      class = "error" 
+      *ngIf="required('projectName')" >
+      Replace the other one!
+    </div>
+    <div
+      class="error" 
+      *ngIf="invalid">
+      You cannot use the name "Test"! Please, enter another project name!
+    </div>
+    <input 
+      type="text"
+      placeholder="Mail"
+      formControlName = "mail">
+    <div class = "error" *ngIf="required('mail')" >
+      Please enter a valid email!
+    </div>
+
+    <select formControlName="projectStatus">
+      <option value="">Project Status Dropdown</option>
+      <option *ngFor="let item of statuses"
+              [value]="item.id">
+              {{item.status}}
+      </option>
+    </select>
+        
+    <button 
+      type="button"
+      [disabled]="form.invalid">
+      Submit
+    </button>
+  </div>
+</form>
