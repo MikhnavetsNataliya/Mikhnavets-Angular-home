@@ -1,0 +1,24 @@
+  <form class="form-log"
+        (ngSubmit)="onSubmit(formLog.value)"
+        [formGroup]="formLog">
+    <div class="form-block">
+        <input 
+            class="form-input"
+            type="text"
+            formControlName="formLogName"
+            placeholder="Add a log...">
+    </div>
+    <button 
+            (click)="addLog()"
+            type="su"
+            class="btn btn-add"
+            [disabled]="!formLog.valid">
+            Add log
+    </button>
+    <button (click)="clearLog()"
+            type="submit"
+            class="btn btn-clear"
+            [hidden]="!formLog.valid">
+            Clear
+    </button>
+  </form>
