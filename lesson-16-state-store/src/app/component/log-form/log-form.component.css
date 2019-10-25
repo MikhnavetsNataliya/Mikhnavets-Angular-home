@@ -1,0 +1,15 @@
+.logForm{
+  border: 1px solid black;
+}
+
+.form-input {
+  height: 2em;
+}
+.btn {
+  background: gray;
+  padding: 2em;
+}
+
+.btn-clear{
+  background: yellow;
+}

@@ -1,0 +1,10 @@
+.navbar {
+  background: black;
+  width: 100%;
+  height: 5em;
+}
+
+.navbar-name {
+  padding: 1.2em;
+  color: white;
+}
